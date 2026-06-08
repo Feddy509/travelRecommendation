@@ -1,0 +1,64 @@
+{
+    "countries": [
+      {
+        "id": 1,
+        "name": "Australie",
+        "cities": [
+          {
+            "name": "Sydney, Australie",
+            "imageUrl": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=600&q=80",
+            "description": "Une métropole vibrante connue pour son Opéra emblématique, ses plages urbaines et son magnifique port."
+          },
+          {
+            "name": "Melbourne, Australie",
+            "imageUrl": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80",
+            "description": "La capitale culturelle d'Australie, célèbre pour son art de rue, ses ruelles animées et ses cafés."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Japon",
+        "cities": [
+          {
+            "name": "Tokyo, Japon",
+            "imageUrl": "https://images.unsplash.com/photo-1540959733332-eab4deceeaf7?auto=format&fit=crop&w=600&q=80",
+            "description": "Une mégapole fascinante qui mélange harmonieusement les traditions ancestrales et la technologie moderne."
+          },
+          {
+            "name": "Kyoto, Japon",
+            "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80",
+            "description": "Le cœur culturel du Japon, célèbre pour ses milliers de temples bouddhistes classiques et ses jardins."
+          }
+        ]
+      }
+    ],
+    "temples": [
+      {
+        "id": 1,
+        "name": "Angkor Wat, Cambodge",
+        "imageUrl": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=600&q=80",
+        "description": "Le plus grand complexe religieux au monde, un chef-d'œuvre architectural de l'ancien Empire khmer."
+      },
+      {
+        "id": 2,
+        "name": "Kinkaku-ji, Japon",
+        "imageUrl": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=600&q=80",
+        "description": "Le Pavillon d'Or, un temple zen spectaculaire dont les deux étages supérieurs sont recouverts d'or pur."
+      }
+    ],
+    "beaches": [
+      {
+        "id": 1,
+        "name": "Bora Bora, Polynésie Française",
+        "imageUrl": "https://images.unsplash.com/photo-1532408840957-031d8034aeef?auto=format&fit=crop&w=600&q=80",
+        "description": "Un lagon turquoise paradisiaque parsemé d'îlots de sable blanc et de bungalows luxueux sur pilotis."
+      },
+      {
+        "id": 2,
+        "name": "Copacabana, Brésil",
+        "imageUrl": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=600&q=80",
+        "description": "Une des plages les plus célèbres au monde, s'étendant sur 4 km au rythme de la bossa nova à Rio."
+      }
+    ]
+  }

@@ -1,0 +1,571 @@
+/* Style général et réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Barre de navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav .logo h2 {
+    color: #20b2aa;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #20b2aa;
+}
+
+/* Zone de recherche nan Navbar */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espas ant input ak bouton yo */
+}
+
+.search-container input {
+    padding: 8px 15px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.search-container input::placeholder {
+    color: #ccc;
+}
+
+/* Bouton Rechercher */
+#btn-search {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    background-color: #20b2aa;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+#btn-search:hover {
+    background-color: #1a948e;
+}
+
+/* Bouton Réinitialiser */
+#btn-clear {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 1px solid #ff4d4d;
+    background-color: transparent;
+    color: #ff4d4d;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#btn-clear:hover {
+    background-color: #ff4d4d;
+    color: white;
+}
+/* Section Principale (Hero) */
+header {
+    /* Tu pourras remplacer cette image par celle de ton choix dans ton dossier de projet */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Boîte de contenu principale */
+.hero-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 800px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+/* Barre de recherche */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    background-color: #20b2aa;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+    transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #1a948e;
+}
+
+/* Bouton Réserver maintenant */
+.cta-button {
+    margin-bottom: 30px;
+}
+
+.btn-book {
+    padding: 14px 40px;
+    font-size: 18px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #20b2aa;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-book:hover {
+    background-color: #20b2aa;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(32, 178, 170, 0.4);
+}
+
+/* Réseaux sociaux */
+.social-links {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #20b2aa;
+}
+/* Seksyon Accueil (Hero Section) */
+#accueil {
+    /* Image de fond pou vwayaj (Ou ka ranplase URL sa a ak nenpòt lòt imaj ou vle) */
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+                url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px; /* Pou evite navbar a kouvri tèks la */
+}
+
+/* Bwat kontni an */
+.hero-content {
+    background: rgba(0, 0, 0, 0.55); /* Yon ti fonse pou tèks la ka parèt pi flash */
+    backdrop-filter: blur(10px); /* Efè flou dèyè bwat la */
+    padding: 50px 40px;
+    border-radius: 20px;
+    max-width: 850px;
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Titre Introduction */
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+/* Tèks Entrodiksyon an */
+.intro-text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #f0f0f0;
+    margin-bottom: 35px;
+    text-align: justify; /* Pou rann paragraf la pi pwòp */
+}
+
+/* Bouton ak lòt eleman yo rete menm jan an */
+.btn-book {
+    padding: 14px 45px;
+    font-size: 18px;
+    background-color: #20b2aa;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(32, 178, 170, 0.3);
+}
+
+.btn-book:hover {
+    background-color: #1a948e;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(32, 178, 170, 0.5);
+}
+/* Style pou Paj À Propos (about.html) */
+.about-container {
+    padding: 120px 20px 60px 20px; /* 120px anwo pou navbar a pa kouvri kontni an */
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Seksyon Enfòmasyon Antrepriz */
+.company-info {
+    text-align: center;
+    margin-bottom: 60px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.company-info h1 {
+    font-size: 2.5rem;
+    color: #20b2aa;
+    margin-bottom: 20px;
+}
+
+.company-info p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+
+/* Seksyon Ekip */
+.team-section {
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.team-intro {
+    font-size: 1.1rem;
+    color: #b0b0b0;
+    margin-bottom: 40px;
+}
+
+/* Grid pou mete manm yo sou liy */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Kat Manm Ekip yo (Team Cards) */
+.team-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(32, 178, 170, 0.2);
+    border-color: #20b2aa;
+}
+
+/* Ti wonn pou foto oswa inisyal */
+.avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #20b2aa;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
+
+.team-card h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.team-card .role {
+    font-size: 1rem;
+    color: #20b2aa;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.team-card .bio {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #cccccc;
+}/* Style pou Paj Contact (contact.html) */
+.contact-container {
+    padding: 120px 20px 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contact-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.contact-box h1 {
+    font-size: 2.2rem;
+    color: #20b2aa;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-intro {
+    text-align: center;
+    color: #b0b0b0;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Groupman eleman nan fòm nan */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Style pou Input ak Textarea */
+.form-group input, 
+.form-group textarea {
+    padding: 12px 15px;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder, 
+.form-group textarea::placeholder {
+    color: #888;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #20b2aa;
+    background-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 8px rgba(32, 178, 170, 0.3);
+}
+
+/* Style pou bouton Soumettre */
+#btn-submit {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #20b2aa;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+#btn-submit:hover {
+    background-color: #1a948e;
+    transform: translateY(-2px);
+}
+
+#btn-submit:active {
+    transform: translateY(0);
+}
+
+/* Seksyon Rezilta Rechèch yo (Mizajou pou Tâche 8) */
+.results-box {
+    margin-top: 40px;
+    display: grid;
+    /* Sa a fòse kat yo rete sou yon sèl ranje si gen espas, oubyen kreye bèl aliyman */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px;
+}
+
+.result-card {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Imaj la anlè, tèks la anba pou layout grid la bèl */
+    transition: transform 0.3s ease;
+}
+
+.result-card:hover {
+    transform: translateY(-5px);
+    border-color: #20b2aa;
+}
+
+.result-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Pou imaj la pa defòme */
+}
+
+.result-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.result-info h3 {
+    color: #20b2aa;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.result-info p {
+    font-size: 0.95rem;
+    color: #e0e0e0;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.btn-visit {
+    align-self: flex-start;
+    padding: 8px 20px;
+    background-color: #20b2aa;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn-visit:hover {
+    background-color: #1a948e;
+}
+
+.error-msg {
+    color: #ff4d4d;
+    font-weight: 600;
+    grid-column: 1 / -1; /* Pou mesaj erè a pran tout lajè grid la */
+    text-align: center;
+}
+.btn-visit {
+    align-self: flex-start;
+    padding: 6px 15px;
+    background-color: #20b2aa;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.error-msg {
+    color: #ff4d4d;
+    font-weight: 600;
+}
